@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import logo from "@/assets/AdCraftz-logo.jpeg";
+import logo from "@/assets/AdCraftz-logo.png";
 
 const navItems = [
   { label: "Home", href: "/#home" },
@@ -55,7 +55,7 @@ export function Navbar() {
           <img 
             src={logo} 
             alt="AdCraftz Logo" 
-            className="h-10 w-auto object-contain"
+            className="h-12 w-auto object-contain"
           />
         </Link>
 
