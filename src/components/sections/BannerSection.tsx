@@ -70,7 +70,7 @@ export function BannerSection() {
               transition={{ duration: 1.5, repeat: Infinity }}
             />
             <Sparkles className="w-4 h-4" />
-            #1 Digital Marketing Agency in Hyderabad
+            #2 Digital Marketing Agency in Hyderabad
           </motion.div>
 
           {/* Title */}
