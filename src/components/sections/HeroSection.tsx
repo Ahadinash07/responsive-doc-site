@@ -254,7 +254,7 @@ export function HeroSection() {
               size="lg"
               variant="outline"
               onClick={() => setIsModalOpen(true)}
-              className="h-12 px-8 rounded-xl border-primary/30 hover:bg-primary/5"
+              className="h-12 px-8 rounded-xl border-primary/30 hover:bg-primary "
             >
               <span className="flex items-center gap-2">
                 Book Free Consultation

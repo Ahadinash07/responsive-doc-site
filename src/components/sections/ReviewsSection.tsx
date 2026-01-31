@@ -44,7 +44,7 @@ export function ReviewsSection() {
   return (
     <section id="reviews" className="py-10 lg:py-20 relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-teal/3 to-success/5" />
+      <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-teal/5 to-success/10" />
 
       <div className="section-container relative z-10">
         {/* Header */}
@@ -77,7 +77,7 @@ export function ReviewsSection() {
                 </div>
 
                 {/* Quote Icon */}
-                <Quote className="w-8 h-8 text-primary/30 mb-3" />
+                {/* <Quote className="w-8 h-8 text-primary/30 mb-3" /> */}
 
                 {/* Review Text */}
                 <p className="text-muted-foreground mb-6 leading-relaxed flex-1">
