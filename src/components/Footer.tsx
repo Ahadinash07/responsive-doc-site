@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import logo from "@/assets/AdCraftz-logo.png";
 
@@ -37,9 +37,9 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
           {/* Brand */}
           <div className="col-span-2 lg:col-span-2">
-            <Link to="/" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2">
           <img 
-            src={logo} 
+            src={logo.src} 
             alt="AdCraftz Logo" 
             className="h-20 w-auto object-contain"
           />
@@ -104,7 +104,7 @@ export function Footer() {
                 <li key={link.label}>
                   {'isRoute' in link && link.isRoute ? (
                     <Link
-                      to={link.href}
+                      href={link.href}
                       className="text-muted-foreground hover:text-foreground transition-colors"
                     >
                       {link.label}

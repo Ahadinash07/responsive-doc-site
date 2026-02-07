@@ -1,3 +1,5 @@
+'use client';
+
 import bannerImage from "@/assets/digital-marketing-banner.jpg";
 import { useState } from "react";
 import {
@@ -45,7 +47,7 @@ export function BannerSection() {
     <section className="relative w-full min-h-[40vh] md:min-h-[60vh] lg:min-h-[92vh] mt-16 overflow-hidden">
       {/* Background Image */}
       <img
-        src={bannerImage}
+        src={bannerImage.src}
         alt="Digital Marketing"
         className="absolute inset-0 w-full h-full object-cover"
       />
@@ -57,21 +59,6 @@ export function BannerSection() {
       <div className="section-container relative z-10 pt-12 pb-20">
         {/* ================= HEADING ================= */}
         <div className="text-center max-w-4xl mx-auto mb-12 text-white">
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 border border-primary/30 text-sm mb-6"
-          >
-            <motion.span
-              className="w-2 h-2 rounded-full bg-primary"
-              animate={{ scale: [1, 1.3, 1] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
-            />
-            <Sparkles className="w-4 h-4" />
-            #2 Digital Marketing Agency in Hyderabad
-          </motion.div>
 
           {/* Title */}
           <motion.h1
@@ -254,33 +241,10 @@ export function BannerSection() {
                     </motion.button>
                   </div>
                 </div>
-
-                {/* Trust */}
-                <div className="flex items-center justify-center gap-6 mt-6 pt-4 border-t border-border/50">
-                  <span className="text-xs text-muted-foreground">🔒 100% Secure</span>
-                  <span className="text-xs text-muted-foreground">⚡ Response in 24hrs</span>
-                  <span className="text-xs text-muted-foreground">✓ No Spam Ever</span>
-                </div>
               </form>
             </div>
           </div>
         </motion.div>
-
-        {/* ================= CTA ================= */}
-        <div className="text-center mt-10">
-          <p className="text-white text-sm mb-4">
-            Or schedule a detailed consultation with our experts
-          </p>
-          <Button
-            size="lg"
-            variant="outline"
-            onClick={() => setIsModalOpen(true)}
-            className="h-12 px-8 rounded-xl border-primary/40 hover:bg-primary hover:text-primary-foreground"
-          >
-            Book Free Consultation
-            <ArrowRight className="ml-2 w-4 h-4" />
-          </Button>
-        </div>
       </div>
 
       {/* Modal */}

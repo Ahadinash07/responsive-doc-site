@@ -1,3 +1,5 @@
+'use client';
+
 import { Eye, Heart, ShoppingCart, ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
 import { ScrollReveal } from "@/components/animations/ScrollReveal";
